@@ -3,57 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bullets & Bites - Sobrevive al Apocalipsis</title>
+    <title>Bullets & Bites – Survive the Island</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Menú de Navegación -->
+    <!-- NAV -->
     <nav>
         <div class="logo">Bullets & Bites</div>
         <ul>
-            <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="privacy.html">Privacidad</a></li>
             <li><a href="terms.html">Términos</a></li>
         </ul>
     </nav>
 
-    <!-- Sección Principal (Hero) -->
-    <header class="hero">
+    <!-- HERO -->
+    <header class="hero hero-game">
         <div class="hero-content">
-            <h1>BULLETS & BITES</h1>
-            <p>Dispara rápido. Muerde fuerte. No mires atrás.</p>
-            <a href="#" class="btn-main">JUGAR AHORA</a>
+            <img src="images/Header_2560.png" alt="Bullets & Bites" class="hero-logo">
+
+            <p class="tagline">
+                Survive the island. Every bullet counts.
+            </p>
+
+            <!-- CTA visible sin scroll -->
+            <a href="https://play.google.com/store/apps/details?id=com.ilmotoregames.bulletsAndBites"
+               target="_blank" class="btn-main hero-cta">
+                ▶ Play on Google Play
+            </a>
+
+            <div class="social-links">
+                <a href="https://www.youtube.com/@ilMotoreGames" target="_blank">YouTube</a>
+                <span>•</span>
+                <a href="https://www.instagram.com/ilmotoregames/" target="_blank">Instagram</a>
+            </div>
         </div>
     </header>
 
-    <!-- Sección de Información -->
+    <!-- PROMO -->
+    <section class="promo">
+        <img src="images/Afiche_promocional.png" alt="Bullets & Bites Promo">
+    </section>
+
+    <!-- INFO -->
     <section class="container">
         <h2>Sobre el Juego</h2>
-        <p>El mundo ha caído. Los muertos caminan y tú eres la última línea de defensa. 
-           **Bullets & Bites** es un shooter de supervivencia frenético donde cada bala cuenta.</p>
-        
+        <p>
+            Un shooter de supervivencia frenético.
+            Enfrenta hordas de zombies, mejora tu arsenal
+            y sobrevive el mayor tiempo posible.
+        </p>
+
         <div class="features">
             <div class="card">
                 <h3>Hordas Infinitas</h3>
-                <p>Enfréntate a miles de zombies en pantalla simultáneamente.</p>
+                <p>Zombies implacables sin descanso.</p>
             </div>
             <div class="card">
-                <h3>Arsenal Letal</h3>
-                <p>Desde escopetas oxidadas hasta armamento experimental.</p>
+                <h3>Arsenal Brutal</h3>
+                <p>Armas devastadoras y mejoras constantes.</p>
             </div>
             <div class="card">
                 <h3>Supervivencia</h3>
-                <p>Busca recursos, construye refugios y sobrevive a la noche.</p>
+                <p>Cada segundo cuenta.</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2024 Bullets & Bites Studio. Todos los derechos reservados.</p>
-        <p><a href="privacy.html">Política de Privacidad</a> | <a href="terms.html">Términos y Condiciones</a></p>
+        <p>&copy; 2024 ilMotoreGames</p>
     </footer>
+
+    <!-- CTA FIJO MOBILE -->
+    <div class="mobile-cta">
+        <a href="https://play.google.com/store/apps/details?id=com.ilmotoregames.bulletsAndBites"
+           target="_blank">
+            ▶ Install on Google Play
+        </a>
+    </div>
 
 </body>
 </html>
