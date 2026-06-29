@@ -68,9 +68,10 @@ a {
 }
 
 .brand img {
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    object-fit: cover;
     box-shadow: 0 5px 12px rgba(191, 77, 72, .18);
 }
 
@@ -142,6 +143,17 @@ main {
 .hero-copy {
     display: grid;
     gap: 14px;
+}
+
+.studio-line {
+    margin: -6px 0 0;
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.studio-line strong {
+    color: var(--coral-dark);
 }
 
 .eyebrow {
@@ -376,7 +388,6 @@ h1 {
     display: grid;
     gap: 18px;
     padding: 18px;
-    margin-bottom: 36px;
 }
 
 .other-game img {
@@ -390,6 +401,43 @@ h1 {
 .text-link {
     color: var(--coral-dark);
     font-weight: 900;
+}
+
+.studio-identity {
+    display: grid;
+    gap: 18px;
+    align-items: center;
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto 36px;
+    padding: 18px;
+    border-radius: 8px;
+    background: #171717;
+    border: 2px solid rgba(255, 225, 203, .28);
+    box-shadow: var(--shadow);
+    color: #f8efe6;
+}
+
+.studio-identity img {
+    width: 100%;
+    max-height: 260px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.studio-identity h2 {
+    margin-bottom: 8px;
+    color: #fff7ec;
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1;
+}
+
+.studio-identity p {
+    color: #d9c9bd;
+}
+
+.studio-identity .eyebrow {
+    color: var(--honey);
 }
 
 footer {
@@ -481,7 +529,7 @@ footer a {
     .nav-links {
         flex-wrap: wrap;
         justify-content: flex-end;
-        max-width: 9.5rem;
+        max-width: 8.25rem;
         gap: 8px 12px;
         line-height: 1.1;
     }
@@ -512,6 +560,11 @@ footer a {
     .other-game {
         grid-template-columns: 230px 1fr;
         align-items: center;
+    }
+
+    .studio-identity {
+        grid-template-columns: minmax(260px, .95fr) 1fr;
+        padding: 20px;
     }
 
     footer {
